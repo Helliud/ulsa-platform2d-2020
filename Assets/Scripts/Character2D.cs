@@ -14,19 +14,14 @@ public class Character2D : MonoBehaviour
     [SerializeField]
     protected float moveSpeed = 2f;
 
-    //----------------------------------------------------------------------
-    
+    //Raycast ***********************
     [SerializeField]
     Color rayColor = Color.magenta;
-
-    [SerializeField, Range(0.1f, 5.0f)]
-    float rayDistance = 5.0f;
-
+    [SerializeField, Range(0.1f, 5f)]
+    float rayDistance = 5f;
     [SerializeField]
     LayerMask groundLayer;
-
-    //----------------------------------------------------------------------
-
+    //*****************************
 
     void Awake()
     {
@@ -40,7 +35,7 @@ public class Character2D : MonoBehaviour
         get => GameplaySystem.Axis.x < 0 ? true : GameplaySystem.Axis.x > 0 ? false : spr.flipX;
     }
 
-    protected bool Grouding
+    protected bool Grounding
     {
         get => Physics2D.Raycast(transform.position, Vector2.down, rayDistance, groundLayer);
     }
@@ -51,7 +46,4 @@ public class Character2D : MonoBehaviour
         Gizmos.color = rayColor;
         Gizmos.DrawRay(transform.position, Vector2.down * rayDistance);
     }
-
-
-
 }
