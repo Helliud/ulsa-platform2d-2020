@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 535f8e525ff367c4ba67961e201a05ed, type: 3}
-  m_Name: grassRandomTile
+  m_Name: treesRandom
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -35,6 +35,6 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   m_Sprites:
-  - {fileID: 21300000, guid: 81ec7cc4987e9cd4d937a4512cb21a6b, type: 3}
-  - {fileID: 21300000, guid: 008c6b6b13a95934ea7f50852819754c, type: 3}
-  - {fileID: 21300000, guid: 17d0c28976e00f345b2c4387c671a74c, type: 3}
+  - {fileID: 21300000, guid: c6bae41e9d7e33b42b596f84bb23de48, type: 3}
+  - {fileID: 21300000, guid: 7a947342e8d9d22468cab539ad1a75ae, type: 3}
+  - {fileID: 21300000, guid: 5f36b020b14a12649b6719d3bd2c5c3d, type: 3}
