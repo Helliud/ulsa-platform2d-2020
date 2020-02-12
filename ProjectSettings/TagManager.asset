@@ -40,21 +40,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: trees
-    uniqueID: 2892053259
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: ground
-    uniqueID: 1806231185
+    uniqueID: 2332016351
+    locked: 0
+  - name: trees
+    uniqueID: 2538127269
     locked: 0
   - name: collectable
-    uniqueID: 2758547961
+    uniqueID: 3667407573
     locked: 0
   - name: grass
-    uniqueID: 3491848317
+    uniqueID: 2057884943
+    locked: 0
+  - name: enemy
+    uniqueID: 1099802253
     locked: 0
   - name: player
-    uniqueID: 125282621
+    uniqueID: 3169655003
     locked: 0
