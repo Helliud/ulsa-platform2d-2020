@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoadGameButton : MonoBehaviour
 {
@@ -13,8 +14,11 @@ public class LoadGameButton : MonoBehaviour
         btnLoadGame.onClick.AddListener(LoadGame);
     }
 
-    void LoadGame()
+    public void LoadGame()
     {
-        Debug.Log("Game Loaded");
+        Debug.Log("Game loaded");
+        SceneManager.LoadScene(1);
+        btnLoadGame.gameObject.SetActive(false);
+        Gamemanager.instance.Score.gameObject.SetActive(true);
     }
 }
